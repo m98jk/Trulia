@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+button{
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+header{
+    position: fixed;
+    top:0;
+    padding: 20px;
+    width:100%;
+    height: 60px;
+    display: flex;
+    background: white;
+    z-index: 10;
+}
+
+#logo{
+    flex-shrink: 0;
+    width: 60px;
+}
+nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    margin:15px;
+    margin-top:60px;
+}
+.wrap{
+    position: relative;
+}
+.btn{
+    transition: all 150ms ease-in-out;
+    background: #fff;
+    border-radius: 0.5em;
+    font-weight: 600;
+    padding:0.5em;
+    text-decoration: none;
+    color:rgb(0,40,44);
+}
+.btn-colorless:hover{
+    background: rgb(0,120,130);
+    color:white;
+}
+.btn-bordered{
+    border:1px solid lightgray;
+}
+.btn-bordered:hover{
+    background: lightgray;
+}
+#search-section{
+    border-radius: 15px;
+    background-image: url('../imgs/cover-photo.jpg');
+    background-position-y: 25%;
+}
+.width-500{
+    width: 500px;
+    height: 450px;
+}
+.center{
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+
+}
+#slogan{
+    width: 100%;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 50px;
+}
+#search-selectors{
+    background:#2d323044;
+    border-radius:5px;
+    width:262px;
+    align-self: center;
+    
+}
+.search-filter{
+    background: transparent;
+    font-size: 18px;
+    padding: 8px 24px;
+    color:white;
+}
+.search-filter:hover{
+    background: white;
+    color:black;
+}
+.btn-checked{
+    background: white;
+    color:black;
+}
+#search-box svg{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    
+}
+/* top left, top right, bottom right, bottom left */
+.red-btn{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(156, 17, 20);
+    border-radius:0 15px 15px 0; 
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    right: 25px;
+}
+input[type="text"] {
+    height: 50px;
+    width: 350px;
+    border-radius: 15px 0 0 15px;
+    text-align: center;
+}
+section h3{
+    font-size: 48px;
+    margin-bottom: 5%;
+}
+.flex{
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.service-card .btn{
+    display: block;
+    background: rgb(0, 120, 130);
+    color: #fff;
+    width: 150px;
+    margin: 0 auto;
+}
+.service-card .btn:hover{
+    color: rgb(0, 120, 130);
+    background: #fff;
+    border: 1px solid rgb(0, 120, 130);
+    border-radius: 0.5em;
+}
+#services-section,#explore-section{
+
+    margin-top:15%; 
+    text-align: center;
+    
+}
+.lg-1{
+    background: url('../imgs/image-lg-1.jpg') no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.sm-1{
+    background: url('../imgs/image-sm-1.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.sm-2{
+    background: url('../imgs/image-sm-3.jpg') no-repeat;
+    height: 100%;
+    margin-top: 13%;
+}
+.lg-2{
+    background: url('../imgs/image-lg-2.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+}
+.carosel{
+    display: flex;
+    justify-content: center;
+   
+}
+.column{
+    width:300px;
+    height:400px;
+    margin: 5px;
+    
+}
+.image-card-lg{
+    position: relative;
+    border-radius: 15px;
+}
+.image-card-sm{
+    position: relative;
+    border-radius: 15px;
+    width:100%;
+    height:45%;
+}
+.image-card h5,.image-card h2{
+    color:white;
+    text-shadow: 2px 2px 2px #000;
+}
+.image-card a{
+    position:absolute;
+    bottom: 5px;
+    right:5px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+}
+.image-card a::after{
+  content:">";
+  color:white;
+  font-weight: 500;
+}
+.image-card .wrap{
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
+.image-card h5{
+    font-weight: 400;
+}
